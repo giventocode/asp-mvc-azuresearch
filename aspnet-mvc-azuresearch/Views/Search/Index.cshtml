@@ -1,0 +1,51 @@
+﻿@model aspnet_mvc_azuresearch.Models.SearchViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search</h2>
+
+<p>
+    @using (Html.BeginForm("","Search",FormMethod.Get))
+    {
+       
+
+        <div class="form-horizontal">
+            <h4>RockBand Search</h4>
+            <hr />
+            <div class="form-group">
+                @Html.LabelFor(model => model.Criteria, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Criteria, new { htmlAttributes = new { @class = "form-control" } })                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Search" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+
+</p>
+
+
+
+<ul>
+    @foreach (var item in Model.Results)
+    {
+        <li>
+            <strong>@Html.DisplayFor(model => item.Name)</strong>
+            <p>
+                <small>Genre: @Html.DisplayFor(model => item.Genre)</small>
+            </p>
+            <p>
+                @Html.DisplayFor(model => item.Description)
+            </p>
+            
+        </li>        
+    }
+</ul>

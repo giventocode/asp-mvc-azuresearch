@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet-mvc-azuresearch", "aspnet-mvc-azuresearch\aspnet-mvc-azuresearch.csproj", "{F3EED5D5-BA9C-4092-A6C2-22630E4EF7B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giventocode.AzureSearchEntityManager", "azuresearch-entitymanager\Giventocode.AzureSearchEntityManager\Giventocode.AzureSearchEntityManager.csproj", "{CD4B48A6-C243-4906-84AA-3F2058DB8BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giventocode.AzureSearchWebJob", "Giventocode.AzureSearchWebJob\Giventocode.AzureSearchWebJob.csproj", "{9DA4C476-8D41-4E6F-8BC8-B514F216E53C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3EED5D5-BA9C-4092-A6C2-22630E4EF7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EED5D5-BA9C-4092-A6C2-22630E4EF7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EED5D5-BA9C-4092-A6C2-22630E4EF7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EED5D5-BA9C-4092-A6C2-22630E4EF7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD4B48A6-C243-4906-84AA-3F2058DB8BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD4B48A6-C243-4906-84AA-3F2058DB8BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD4B48A6-C243-4906-84AA-3F2058DB8BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD4B48A6-C243-4906-84AA-3F2058DB8BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA4C476-8D41-4E6F-8BC8-B514F216E53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA4C476-8D41-4E6F-8BC8-B514F216E53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA4C476-8D41-4E6F-8BC8-B514F216E53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA4C476-8D41-4E6F-8BC8-B514F216E53C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
