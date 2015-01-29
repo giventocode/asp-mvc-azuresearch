@@ -16,18 +16,18 @@ using System.Web;
 
 namespace Giventocode.AzureSearchEntityManager
 {
-    public class IndexManager
+    public class IndexQueueManager
     {
         private QueueClient _qClient;        
         public  const string INDEXER_QUEUE = "indexerqueue";
 
-        public IndexManager()
+        public IndexQueueManager()
         {
             _qClient = GetQClient(Utils.GetRequiredConfigurationValue("ASEM_SbConnString"));
          
         }
         
-        public IndexManager(string sbConnectionString)
+        public IndexQueueManager(string sbConnectionString)
         {
             if (sbConnectionString == null)
             {

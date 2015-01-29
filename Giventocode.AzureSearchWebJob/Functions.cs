@@ -15,7 +15,7 @@ namespace Giventocode.AzureSearchWebJob
         // This function will get triggered/executed when a new message is written 
         // on an Azure Queue called queue.
         
-        public static async Task IndexEntity( [ServiceBusTrigger(IndexManager.INDEXER_QUEUE)] string msg ,
+        public static async Task IndexEntity( [ServiceBusTrigger(IndexQueueManager.INDEXER_QUEUE)] string msg ,
              TextWriter log) 
          {
              var searchMan = new AzureSearchManager();              

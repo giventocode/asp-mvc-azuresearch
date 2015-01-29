@@ -15,7 +15,7 @@ namespace aspnet_mvc_azuresearch.Controllers
     public class RockBandsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();        
-        private IndexManager ixMan = new IndexManager();
+        private IndexQueueManager ixMan = new IndexQueueManager();
 
 
         // GET: RockBands
